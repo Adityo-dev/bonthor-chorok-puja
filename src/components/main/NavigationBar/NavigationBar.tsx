@@ -31,10 +31,8 @@ const NavigationBar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full transition-all duration-500 ${
-        scrolled
-          ? 'border-b border-orange-900/50 bg-black/90 py-3 shadow-2xl backdrop-blur-md'
-          : 'bg-black/20 py-6' // টেক্সট বোঝার জন্য হালকা ব্যাকগ্রাউন্ড দেওয়া হয়েছে
+      className={`fixed z-50 w-full border-orange-900/50 py-4 transition-all duration-300 ${
+        scrolled && 'border-b bg-black/20 py-3 shadow-2xl backdrop-blur-sm'
       }`}
     >
       <div className="mx-auto flex max-w-400 items-center justify-between px-6">
@@ -42,8 +40,9 @@ const NavigationBar: React.FC = () => {
           <div className="rounded-lg bg-gradient-to-br from-orange-600 to-red-800 p-2 shadow-lg shadow-orange-900/20 transition-transform group-hover:rotate-12">
             <Scroll size={28} className="text-white" />
           </div>
-          <h1 className="bg-gradient-to-r from-orange-400 to-yellow-200 bg-clip-text text-2xl font-black tracking-tighter text-transparent uppercase">
-            bonthor chorok puja
+          <h1 className="bg-gradient-to-r from-orange-400 to-yellow-200 bg-clip-text text-lg font-black tracking-tighter text-transparent sm:text-2xl">
+            {/* bonthor chorok puja */}
+            বোঁথড় চড়ক পূজা
           </h1>
         </Link>
 
@@ -76,7 +75,7 @@ const NavigationBar: React.FC = () => {
 
       {/* মোবাইল মেনু */}
       {isMobileMenuOpen && (
-        <div className="animate-in slide-in-from-top-5 absolute top-full left-0 flex w-full flex-col gap-6 border-b border-orange-900/50 bg-black/95 px-6 py-8 backdrop-blur-xl lg:hidden">
+        <div className="animate-in slide-in-from-top-5 absolute top-full left-0 flex w-full flex-col gap-6 border-b border-orange-900/50 bg-black/20 px-6 py-8 shadow-2xl backdrop-blur-sm lg:hidden">
           {navItems.map((item) => (
             <Link
               key={item.id}

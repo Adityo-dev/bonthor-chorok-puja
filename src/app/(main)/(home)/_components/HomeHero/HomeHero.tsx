@@ -4,54 +4,53 @@ import Image from 'next/image';
 
 const HomeHero = () => {
   return (
-    <section className="relative flex h-screen items-center justify-center overflow-hidden">
-      {/* Overlay/Background Gradient */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/20 via-black/70 to-[#0a0a0a]"></div>
+    <section className="relative flex h-screen items-center justify-center overflow-hidden bg-[#0a0a0a]">
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0a0a0a] via-black/40 to-black/60"></div>
+      <div className="absolute inset-0 z-10 bg-black/20"></div>
 
-      {/* Background Image with Slow Zoom Animation */}
-      <Image
-        width={1600}
-        height={600}
-        src={HeroImage}
-        className="animate-slow-zoom absolute inset-0 h-full w-full scale-105 object-cover"
-        alt="Sacred Fire"
-      />
+      <div className="absolute inset-0 h-full w-full">
+        <Image
+          src={HeroImage}
+          className="animate-slow-zoom h-full w-full scale-105 object-cover opacity-70"
+          alt="ঐতিহাসিক চড়ক উৎসব"
+        />
+      </div>
 
-      <div className="relative z-20 mx-auto max-w-400 space-y-8 px-4 text-center">
+      <div className="relative z-20 mx-auto max-w-5xl space-y-8 px-6 text-center">
         {/* Established Badge */}
-        <div className="inline-flex animate-pulse items-center gap-2 rounded-full border border-orange-500/80 bg-orange-600/30 px-4 py-2 text-[10px] tracking-[0.5em] text-white uppercase">
-          <Flame size={12} /> শতাব্দী প্রাচীন আধ্যাত্মিক ঐতিহ্য
+        <div className="inline-flex animate-pulse items-center gap-2 rounded-full border border-orange-500/80 bg-black/50 px-4 py-2 text-[10px] font-bold tracking-[0.3em] text-orange-400 uppercase shadow-lg shadow-black/50 backdrop-blur-sm md:text-xs">
+          <Flame size={14} /> শতাব্দী প্রাচীন আধ্যাত্মিক ঐতিহ্য
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-6xl leading-none font-black tracking-tighter text-white drop-shadow-2xl md:text-[10rem]">
+        <h1 className="text-6xl leading-none font-black tracking-tighter text-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] md:text-[8rem] lg:text-[10rem]">
           <span className="text-orange-600">চড়ক</span> পূজা
         </h1>
 
         {/* Description */}
-        <p className="mx-auto max-w-3xl text-lg leading-relaxed font-light text-gray-300 italic md:text-2xl">
-          বোঁথড় গ্রামের ঐতিহাসিক চড়ক ও শিবতলার অমর কাহিনী। আমাদের পূর্বপুরুষদের বিশ্বাস আর ত্যাগের
-          এক অনন্ত যাত্রা।
+        <p className="mx-auto max-w-3xl rounded-lg bg-black/10 p-2 text-lg leading-relaxed font-medium text-gray-200 drop-shadow-md backdrop-blur-[2px] md:text-2xl">
+          {`  "বোঁথড় গ্রামের ঐতিহাসিক চড়ক ও চড়ক বাড়ির অমর কাহিনী। আমাদের পূর্বপুরুষদের বিশ্বাস আর
+          ত্যাগের এক অনন্ত আধ্যাত্মিক যাত্রা।"`}
         </p>
 
         {/* Call to Action Buttons */}
-        <div className="flex flex-wrap justify-center gap-6 pt-8">
-          <button className="group flex items-center gap-3 rounded-xl bg-orange-600 px-10 py-5 font-bold text-white shadow-[0_0_30px_rgba(234,88,12,0.3)] transition-all hover:bg-orange-700">
-            বইয়ের পাতা খুলুন{' '}
+        <div className="flex flex-wrap justify-center gap-6 pt-6">
+          <button className="group flex items-center gap-3 rounded-2xl bg-orange-600 px-10 py-5 font-bold text-white shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all hover:scale-105 hover:bg-orange-700 active:scale-95">
+            ইতিহাস জানুন
             <ArrowRight className="transition-transform group-hover:translate-x-2" />
           </button>
 
-          <button className="rounded-xl border border-white/20 px-10 py-5 font-bold text-white backdrop-blur-md transition-all hover:bg-white/10">
+          <button className="rounded-2xl border border-white/30 px-10 py-5 font-bold text-white backdrop-blur-md transition-all hover:scale-105 hover:bg-white/20 active:scale-95">
             গ্যালারি দেখুন
           </button>
         </div>
       </div>
 
-      {/* Tailwind Specific Keyframes Inject (For slow-zoom animation) */}
+      {/* CSS for Zoom Animation */}
       <style>{`
         @keyframes slow-zoom {
           0% { transform: scale(1); }
-          100% { transform: scale(1.1); }
+          100% { transform: scale(1.15); }
         }
         .animate-slow-zoom {
           animation: slow-zoom 20s infinite alternate ease-in-out;

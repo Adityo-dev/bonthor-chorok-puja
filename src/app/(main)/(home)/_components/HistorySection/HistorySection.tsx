@@ -1,4 +1,5 @@
-import Imagess from '@/assets/image.png';
+import image1 from '@/assets/image1.jpg';
+import image2 from '@/assets/image2.jpg';
 import { History } from 'lucide-react';
 import Image from 'next/image';
 
@@ -35,7 +36,7 @@ const HistorySection = () => {
           <div className="space-y-6">
             <div className="h-80 overflow-hidden rounded-[2rem] border border-white/5 bg-stone-900 shadow-2xl">
               <Image
-                src={Imagess}
+                src={image1}
                 className="h-full w-full object-cover opacity-60 grayscale transition duration-700 hover:opacity-100 hover:grayscale-0"
                 alt="Tradition"
               />
@@ -57,7 +58,7 @@ const HistorySection = () => {
             </div>
             <div className="h-80 overflow-hidden rounded-[2rem] border border-white/5 bg-stone-900 shadow-2xl">
               <Image
-                src={Imagess}
+                src={image2}
                 className="h-full w-full object-cover opacity-60 grayscale transition duration-700 hover:opacity-100 hover:grayscale-0"
                 alt="Rituals"
               />

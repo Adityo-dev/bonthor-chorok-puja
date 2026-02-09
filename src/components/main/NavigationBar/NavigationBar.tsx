@@ -23,10 +23,10 @@ const NavigationBar: React.FC = () => {
 
   const navItems: NavItem[] = [
     { id: 'home', label: 'প্রচ্ছদ', path: '/' },
-    { id: 'history', label: 'ইতিহাস', path: '/history' },
-    { id: 'lineage', label: 'সন্ন্যাসীগণ', path: '/lineage' },
-    { id: 'events', label: 'আচার', path: '/events' },
-    { id: 'manot', label: 'মানত ও সেবা', path: '/manot' },
+    { id: 'history', label: 'ইতিবৃত্ত', path: '/history' },
+    { id: 'lineage', label: 'বংশধারা', path: '/lineage' },
+    { id: 'events', label: 'শাস্ত্রীয় আচার', path: '/events' },
+    { id: 'manot', label: 'সংকল্প ও সেবা', path: '/oath-and-service' },
   ];
 
   return (

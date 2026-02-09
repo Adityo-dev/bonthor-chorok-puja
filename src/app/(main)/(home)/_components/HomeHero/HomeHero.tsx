@@ -29,19 +29,18 @@ const HomeHero = () => {
 
         {/* Description */}
         <p className="mx-auto max-w-3xl rounded-lg bg-black/10 p-2 text-lg leading-relaxed font-medium text-gray-200 drop-shadow-md backdrop-blur-[2px] md:text-2xl">
-          {`  "বোঁথড় গ্রামের ঐতিহাসিক চড়ক ও চড়ক বাড়ির অমর কাহিনী। আমাদের পূর্বপুরুষদের বিশ্বাস আর
-          ত্যাগের এক অনন্ত আধ্যাত্মিক যাত্রা।"`}
+          {`"বোঁথড় গ্রামের প্রায় ৭শ বছরের ঐতিহ্যবাহী চড়ক বাড়ির অমর কাহিনী। ইহা আমাদের পূর্বপুরুষগণের অটল বিশ্বাস ও ত্যাগের এক অনন্ত আধ্যাত্মিক মহাযাত্রা।"`}
         </p>
 
         {/* Call to Action Buttons */}
         <div className="flex flex-wrap justify-center gap-6 pt-6">
           <button className="group flex items-center gap-3 rounded-2xl bg-orange-600 px-10 py-5 font-bold text-white shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all hover:scale-105 hover:bg-orange-700 active:scale-95">
-            ইতিহাস জানুন
+            ইতিহাস অবগত হউন
             <ArrowRight className="transition-transform group-hover:translate-x-2" />
           </button>
 
           <button className="rounded-2xl border border-white/30 px-10 py-5 font-bold text-white backdrop-blur-md transition-all hover:scale-105 hover:bg-white/20 active:scale-95">
-            গ্যালারি দেখুন
+            চিত্রশালা দর্শন
           </button>
         </div>
       </div>

@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -53,10 +53,10 @@
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1550px;
   /*======> Custom Colors <=======*/
-  /*======> dark mode <=======*/
-  --color-primary-100: #28a745;
-  --color-primary-200: #151519;
-  --color-secondary: #2a2d33;
+  --color-background-main: #0a0a0a;
+  --color-background-darker: #080808;
+  --color-card-bg: #1c1917;
+  --color-accent-orange: #ea580c;
 }
 
 :root {

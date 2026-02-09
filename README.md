@@ -32,4 +32,4 @@
 
 ১. রিপোজিটরি ক্লোন করুন:
 ```bash
-git clone [https://github.com/your-username/charak-puja-website.git](https://github.com/your-username/charak-puja-website.git)
+git clone https://github.com/Adityo-dev/bonthor-chorok-puja.git

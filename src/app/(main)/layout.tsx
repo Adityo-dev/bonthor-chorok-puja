@@ -1,15 +1,16 @@
-import MainFooter from '@/components/main/MainFooter/MainFooter';
-import NavigationBar from '@/components/main/NavigationBar/NavigationBar';
-import React from 'react';
+import HeritageNavbar from '@/components/HeritageNavbar';
+import HeritageFooter from '@/components/main/MainFooter/HeritageFooter';
 
-const MainLayout = ({ children }: { children: React.ReactNode }) => {
+export default function MainLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <main>
-      <NavigationBar />
+    <div className="bg-charcoal-dark min-h-screen">
+      <HeritageNavbar />
       {children}
-      <MainFooter />
-    </main>
+      <HeritageFooter />
+    </div>
   );
-};
-
-export default MainLayout;
+}

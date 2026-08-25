@@ -53,10 +53,18 @@
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1550px;
   /*======> Custom Colors <=======*/
-  --color-background-main: #0a0a0a;
-  --color-background-darker: #080808;
-  --color-card-bg: #1c1917;
-  --color-accent-orange: #ea580c;
+  --color-charcoal: #050505;
+  --color-ivory: #e6dfd5;
+  --color-parchment: #b5ada1;
+  --color-terracotta: #4a1515;
+  --color-brass: #b87a4d;
+  --color-forest: #140808;
+  --color-charcoal-dark: #000000;
+  
+  --color-rudra-red: #8b0000;
+  --color-fire-orange: #d95c14;
+  --color-aged-copper: #a65d37;
+  --color-ash-grey: #404040;
 }
 
 :root {
